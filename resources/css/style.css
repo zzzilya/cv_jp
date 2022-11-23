@@ -1,0 +1,256 @@
+.container {
+  background-color: #f8f9fa;
+  color: #44443f;
+  font-family: "Noto Sans JP", sans-serif;
+  text-rendering: optimizeLegibility;
+  text-transform: uppercase;
+}
+
+/* Left side */
+.section-main {
+  background-color: #bdddcb;
+  text-align: center;
+  padding-bottom: 120px;
+  padding-top: 200px;
+}
+
+.profpic {
+  width: 240px;
+  padding-bottom: 16px;
+}
+
+/* CONTACT ME BUTTON */
+
+div[class*="contact-me-box"] {
+  height: 33.33%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-me-btn {
+  line-height: 50px;
+  height: 50px;
+  text-align: center;
+  width: 250px;
+  cursor: pointer;
+}
+
+.contact-me-btn {
+  color: #4b4949;
+  font-size: 16px;
+  transition: all 0.7s;
+  position: relative;
+}
+.contact-me-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-color: rgba(255, 255, 255, 0.201);
+  transition: all 0.5s;
+}
+.contact-me-btn:hover::before {
+  opacity: 0;
+  transform: scale(0.5, 0.5);
+}
+.contact-me-btn::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0;
+  transition: all 0.5s;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  transform: scale(1.2, 1.2);
+}
+.contact-me-btn:hover::after {
+  opacity: 1;
+  transform: scale(1, 1);
+}
+
+/* Right side */
+.right-side-div {
+  padding-bottom: 55px;
+}
+
+.right-side-div-carousel {
+  padding-bottom: 100px;
+}
+
+h5 {
+  color: #6b9a9f;
+}
+
+p,
+li {
+  color: #4b4949;
+  /* font-family: "Noto Sans JP", sans-serif; */
+}
+p {
+  text-transform: none;
+}
+
+li {
+  list-style: none;
+  font-size: 80%;
+  margin-bottom: 15px;
+}
+
+/* ICONS */
+i {
+  font-size: 100%;
+  color: #6b9a9f;
+  vertical-align: sub;
+}
+
+.ul-icons {
+  padding-left: 0;
+  font-size: 100%;
+}
+
+.ul-icons li i {
+  margin-right: 10px;
+  font-size: 180%;
+  color: #6b9a9f;
+}
+
+.ul-icons li .small-icon {
+  font-size: 16px;
+  vertical-align: initial;
+}
+
+.footer-icon {
+  font-size: 100%;
+  margin-bottom: 10px;
+}
+
+/* eof icons */
+
+.section-main,
+.section-scroll {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 50%;
+}
+.section-scroll {
+  left: 50%;
+  right: 0;
+  overflow: hidden;
+  background-color: #fffaf7;
+}
+
+.section-scroll {
+  height: 100%;
+  overflow: auto;
+  padding: 2% 5%;
+  margin-right: -17px; /* scrollbar offset */
+  padding-top: 55px;
+}
+
+/* EXPERIENCE */
+
+.xp-list {
+  background-color: mintcream;
+  border-radius: 25px;
+  margin-bottom: 10px;
+  padding: 10px 0;
+}
+
+.company-btn {
+  background-color: mintcream;
+}
+
+.company-btn,
+.pdf-link {
+  border: none;
+  color: #4b4949;
+  text-transform: uppercase;
+  margin-top: 0;
+  font-weight: 500;
+  line-height: 1.2;
+  font-size: 1rem;
+  padding: 0;
+  position: relative;
+}
+
+.pdf-link {
+  text-transform: none;
+}
+
+.company-btn:after,
+.pdf-link::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: ".";
+  color: transparent;
+  background-color: #c9dadb;
+  height: 1px;
+  transition: all 0.5s;
+}
+
+.company-btn:hover:after,
+.pdf-link:hover::after {
+  width: 100%;
+}
+
+.pdf-link:hover {
+  color: #4b4949;
+}
+
+.experience {
+  text-transform: none;
+  /* font-family: "Kanit", sans-serif; */
+}
+
+.experience li {
+  font-size: 100%;
+}
+
+/* HIDEAWAY */
+#lime,
+#earth-tech,
+#jal,
+#busena {
+  display: none;
+}
+
+/* FOOTER */
+
+.contact-info {
+  text-align: center;
+  font-size: 110%;
+}
+
+.email h6 {
+  font-size: 80%;
+}
+
+.contact-info a,
+.pdf-link {
+  color: #4b4949;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  color: black;
+}
+
+.footer {
+  padding-left: 33%;
+  padding-bottom: 0;
+  padding-top: 20px;
+}
